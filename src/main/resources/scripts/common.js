@@ -1,3 +1,4 @@
+console.log('run on common');
 /**
  * Expose functions that are difficult to represent in Scala.
  *

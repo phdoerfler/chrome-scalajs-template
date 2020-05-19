@@ -31,6 +31,9 @@ buildInfoKeys ++= Seq[BuildInfoKey](
 )
 
 // scala-js-chrome
+scalaJSLinkerConfig := scalaJSLinkerConfig.value.withSourceMap(false)
+version in webpack := "4.8.1"
+
 webpackConfigFile := {
   val file = if (isProductionBuild) "production.webpack.config.js" else "dev.webpack.config.js"
   Some(baseDirectory.value / file)

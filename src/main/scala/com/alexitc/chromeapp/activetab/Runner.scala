@@ -18,7 +18,7 @@ class Runner(config: ActiveTabConfig, backgroundAPI: BackgroundAPI, messages: I1
       title = messages.appName
       text = "Do you like this template?"
       icon = chrome.runtime.Runtime.getURL("icons/96/app.png")
-      buttons = Option(List("Yes", "No").toJSArray).orUndefined
+      buttons = Option(List("No", "Yes").toJSArray).orUndefined
     }).toFuture.onComplete { t =>
       log(s"SweetAlert result: $t")
     }

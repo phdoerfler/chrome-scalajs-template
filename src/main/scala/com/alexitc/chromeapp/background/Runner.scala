@@ -19,7 +19,7 @@ class Runner(
 
   def run(): Unit = {
     log("This was run by the background script")
-    //  alarmRunner.register()
+    alarmRunner.register()
     processExternalMessages()
   }
 

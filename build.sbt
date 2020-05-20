@@ -30,7 +30,8 @@ buildInfoKeys ++= Seq[BuildInfoKey](
   "production" -> (sys.env.getOrElse("PROD", "false") == "true")
 )
 
-// scala-js-chrome
+// NOTE: source maps are disabled to avoid a file not found error which occurs when using the current
+// webpack settings.
 scalaJSLinkerConfig := scalaJSLinkerConfig.value.withSourceMap(false)
 version in webpack := "4.8.1"
 
@@ -39,6 +40,7 @@ webpackConfigFile := {
   Some(baseDirectory.value / file)
 }
 
+// scala-js-chrome
 scalaJSLinkerConfig := scalaJSLinkerConfig.value.withRelativizeSourceMapBase(
   Some((Compile / fastOptJS / artifactPath).value.toURI)
 )
@@ -70,12 +72,11 @@ chromeManifest := new ExtensionManifest {
   override val icons = Chrome.icons("icons", "app.png", Set(48, 96, 128))
 
   // TODO: REPLACE ME, use only the minimum required permissions
-  override val permissions =
-    Set[Permission](
-      API.Storage,
-      API.Notifications,
-      API.Alarms
-    )
+  override val permissions = Set[Permission](
+    API.Storage,
+    API.Notifications,
+    API.Alarms
+  )
 
   override val defaultLocale: Option[String] = Some("en")
 
@@ -93,8 +94,7 @@ chromeManifest := new ExtensionManifest {
   override val contentScripts: List[ContentScript] = List(
     ContentScript(
       matches = List(
-        "https://github.com/*",
-        "https://cazadescuentos.net/*" // TODO: REPLACE ME
+        "https://github.com/*" // TODO: REPLACE ME
       ),
       css = List("css/active-tab.css"),
       js = commonScripts ::: List("scripts/active-tab-script.js")

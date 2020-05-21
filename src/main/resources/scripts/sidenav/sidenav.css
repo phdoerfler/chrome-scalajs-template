@@ -1,0 +1,47 @@
+.sn-backdrop-czd {
+	background: #000;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	display: block;
+	opacity: 0.5;
+	z-index: 1000001;
+	will-change: opacity;
+}
+
+.sn-visible-czd .sn-backdrop-czd {
+	display: block
+}
+
+.sn-sidenav-czd {
+	position: fixed;
+	right: 0;
+	top: 0;
+	height: 100%;
+	z-index: 1000001;
+	overflow-y: auto;
+	will-change: transform;
+	width: 300px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+	background-color: #fff;
+}
+
+.sidenav-czd-left {
+	left: 0;
+	top: 0;
+}
+
+.sn-visible-czd, .sn-visible-czd body, .sn-visible-czd .sn-content-czd {
+	overflow: hidden
+}
+
+.display-none-czd {
+	display: none;
+}
+
+.sn-content-czd {
+	position: relative;
+	z-index: 10
+}

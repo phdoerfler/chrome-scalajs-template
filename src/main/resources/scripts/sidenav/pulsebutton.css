@@ -1,0 +1,131 @@
+.container-czd {
+  /*position: fixed;
+  top: 20px;
+  right: 20px;*/
+  width: 100px;
+  /* height: 100%;
+  margin: 0 auto 0;*/
+  z-index: 1000000;
+}
+
+.menu-toggle-czd-top-right {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.menu-toggle-czd-top-left {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.menu-toggle-czd-bottom-left {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+.menu-toggle-czd-bottom-right {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.pulse-button-czd {
+  position: fixed;
+  width: 90px;
+  height: 90px;
+  z-index: 1000000;
+  box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);
+  border-radius: 50%;
+  background-color: transparent;
+  /*background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);*/
+  background-image: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+  display: block;
+  cursor: pointer;
+  -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+.pulse-button-czd:hover {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  animation: none;
+}
+
+.img-pulse-button-czd {
+  height: 70px;
+  width: 70px;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(.9);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 25px rgba(232, 76, 61, 0);
+  }
+  100% {
+    transform: scale(.9);
+    box-shadow: 0 0 0 0 rgba(232, 76, 61, 0);
+  }
+}
+
+@-moz-keyframes pulse {
+  0% {
+    transform: scale(.9);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 25px rgba(232, 76, 61, 0);
+  }
+  100% {
+    transform: scale(.9);
+    box-shadow: 0 0 0 0 rgba(232, 76, 61, 0);
+  }
+}
+
+@-ms-keyframes pulse {
+  0% {
+    transform: scale(.9);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 25px rgba(232, 76, 61, 0);
+  }
+  100% {
+    transform: scale(.9);
+    box-shadow: 0 0 0 0 rgba(232, 76, 61, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(.9);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 25px rgba(232, 76, 61, 0);
+  }
+  100% {
+    transform: scale(.9);
+    box-shadow: 0 0 0 0 rgba(232, 76, 61, 0);
+  }
+}
+
+@media (max-width: 600px) {
+  .pulse-button-czd {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+  }
+  .img-pulse-button-czd {
+    height: 50px;
+    width: 50px;
+  }
+}

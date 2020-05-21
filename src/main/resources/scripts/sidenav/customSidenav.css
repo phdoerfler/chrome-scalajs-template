@@ -1,0 +1,140 @@
+.img-rounded-czd {
+	border-radius: 50%;
+	box-shadow: 0 5px 15px -8px rgba(0, 0, 0, 0.24), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.container-img-czd {
+	height: 160px;
+	width: 160px;
+	margin: 0 auto;
+}
+
+.bg-red-czd {
+	background-color: red;
+}
+
+.container-img-background-czd {
+	height: 140px;
+	width: 140px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.card-czd {
+	position: relative;
+	height: 300px;
+	width: 100%;
+	text-align: center;
+}
+
+.content-card-czd {
+	position: relative;
+	height: 150px;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.center-czd {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.italic-czd {
+	font-style: italic;
+}
+
+.myButton-czd {
+	background-color: #4fc3f7;
+	border-radius: 8px;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff !important;
+	font-family: Arial !important;
+	font-size: 20px !important;
+	font-weight: bold !important;
+	padding: 10px 25px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #3d768a;
+}
+
+.myButton-czd:hover {
+	background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color: #408c99;
+}
+
+.myButton-czd:active {
+	position: relative;
+	top: 1px;
+}
+
+.card-title-czd {
+	height: 60px;
+	width: 300px;
+	color: white;
+	text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+	background: #e52d27;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #b31217, #e52d27);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #b31217, #e52d27);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	box-shadow: 5px 5px 10px #888888;
+	border-bottom: 1px solid rgba(0, 0, 0, .125);
+	/*padding: 10px 0;*/
+	font-size: 32px;
+	border: 1px solid transparent;
+}
+
+.card-title-czd h1 {
+	font-size: 32px;
+	font-family: "Times New Roman" !important;
+	font-weight: 700 !important;
+	padding: 10px 0;
+	margin: 0px;
+	line-height: 1 !important;
+	letter-spacing: 0px;
+	color: white;
+}
+
+.text-center-czd {
+	text-align: center
+}
+
+.card-content-text-czd {
+	line-height: 20px;
+	font-size: 22px;
+	color: rgba(0, 0, 0, 0.87) !important;
+	text-align: center;
+	margin-top: 15px;
+	font-weight: 150;
+}
+
+.card-content-text-czd p {
+	font-family: "Times New Roman" !important;
+	color: rgba(0, 0, 0, 0.87) !important;
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6) !important;
+	font-size: 22px !important;
+	line-height: 20px !important;
+}
+
+.btn-Cancel-czd {
+	margin-left: 50px;
+}
+
+.btn-Accept-czd {
+	margin-left: 40px;
+	padding: 10px 30px;
+}
+
+#img-logo-czd {
+	width: 96px;
+	height: 96px;
+}
+
+.boder-box-czd {
+	box-sizing: border-box;
+}

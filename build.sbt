@@ -115,5 +115,7 @@ libraryDependencies += "io.circe" %%% "circe-parser" % circe
 
 // js dependencies, adding typescript type definitions gets them a Scala facade
 npmDependencies in Compile ++= Seq(
-  "sweetalert" -> "2.1.2"
+  "sweetalert" -> "2.1.2",
+  "css-loader" -> "0.28.10",
+  "style-loader" -> "0.20.2"
 )

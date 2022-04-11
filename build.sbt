@@ -12,7 +12,7 @@ lazy val baseSettings: Project => Project = {
     .settings(
       name := appName,
       version := "1.0.0",
-      scalaVersion := "2.13.8",
+      scalaVersion := "3.1.1",
       scalacOptions ++= Seq(
         "-language:implicitConversions",
         "-language:existentials",
@@ -96,7 +96,7 @@ lazy val root = (project in file("."))
       "org.scala-js" %%% "scalajs-dom" % "2.1.0",
       "com.alexitc" %%% "scala-js-chrome" % "0.8.1",
       "org.scala-js" %%% "scala-js-macrotask-executor" % "1.0.0",
-      "org.scala-js" %%% "scalajs-java-securerandom" % "1.0.0",
+      ("org.scala-js" %%% "scalajs-java-securerandom" % "1.0.0").cross(CrossVersion.for3Use2_13),
       "io.circe" %%% "circe-core" % circe,
       "io.circe" %%% "circe-generic" % circe,
       "io.circe" %%% "circe-parser" % circe,
